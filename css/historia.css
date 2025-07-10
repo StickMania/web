@@ -1,0 +1,100 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top right, #140024, #000000);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.neon-text {
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #7b2cbf, #3c096c);
+}
+
+.historia {
+    background: linear-gradient(to bottom right, #1a0033, #0a0114);
+}
+
+.historia img {
+    max-height: 400px;
+    object-fit: cover;
+    border: 3px solid #ff00cc;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.btn-purple {
+    background-color: #c2185b;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
+}
+
+.btn-purple:hover {
+    background-color: #ff00cc;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00cc;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-fade-up.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
